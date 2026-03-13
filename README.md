@@ -6,9 +6,13 @@ This project is useful for testing search automation flows and learning how a Ma
 
 ## Preview
 
-![AutoSearchReward Extension Preview](image.gif)
+<p align="center">
+   <img src="assets/images/preview.gif" alt="AutoSearchReward Extension Preview" width="280" />
+</p>
 
-Preview image is optimized as GIF for lightweight repository display.
+<p align="center">
+   Clean popup UI, quick controls, and a lightweight preview for faster loading on GitHub.
+</p>
 
 ## Features
 
