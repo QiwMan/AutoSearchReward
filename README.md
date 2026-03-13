@@ -10,10 +10,6 @@ This project is useful for testing search automation flows and learning how a Ma
    <img src="assets/images/preview.gif" alt="AutoSearchReward Extension Preview" width="280" />
 </p>
 
-<p align="center">
-   Clean popup UI, quick controls, and a lightweight preview for faster loading on GitHub.
-</p>
-
 ## Features
 
 - Configurable number of searches per run
