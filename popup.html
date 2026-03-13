@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Reward Search</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <h1>Auto Reward Search</h1>
+      <p class="sub">Atur jumlah search dan ritme typing natural.</p>
+
+      <label>
+        Jumlah Search
+        <input id="searchCount" type="number" min="1" max="100" />
+      </label>
+
+      <label>
+        Jeda Antar Search Min (ms)
+        <input id="betweenMin" type="number" min="1000" max="120000" />
+      </label>
+
+      <label>
+        Jeda Antar Search Max (ms)
+        <input id="betweenMax" type="number" min="1000" max="120000" />
+      </label>
+
+      <label>
+        Delay Ketik Min per Huruf (ms)
+        <input id="typingMin" type="number" min="20" max="500" />
+      </label>
+
+      <label>
+        Delay Ketik Max per Huruf (ms)
+        <input id="typingMax" type="number" min="20" max="500" />
+      </label>
+
+      <label>
+        Keyword Custom (opsional, 1 baris 1 keyword)
+        <textarea id="customKeywords" rows="4" placeholder="contoh:\nberita sepak bola\nharga emas hari ini"></textarea>
+      </label>
+
+      <div class="actions">
+        <button id="saveBtn" class="neutral">Save</button>
+        <button id="startBtn" class="primary">Start</button>
+        <button id="stopBtn" class="danger">Stop</button>
+      </div>
+
+      <div id="status" class="status">Status: idle</div>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Reward Search",
+  "version": "1.0.0",
+  "description": "Automate Bing searches with configurable count and natural typing simulation.",
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": ["https://www.bing.com/*", "https://bing.com/*", "https://rewards.bing.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://rewards.bing.com/*"],
+      "js": ["rewards-notifier.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Auto Reward Search",
+    "default_popup": "popup.html"
+  }
+}
