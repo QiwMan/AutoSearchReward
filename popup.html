@@ -9,36 +9,36 @@
   <body>
     <main class="panel">
       <h1>Auto Reward Search</h1>
-      <p class="sub">Atur jumlah search dan ritme typing natural.</p>
+      <p class="sub">Set your search flow with natural typing rhythm. (Atur alur pencarian dengan ritme ketik natural.)</p>
 
       <label>
-        Jumlah Search
+        Search Count / Jumlah Search
         <input id="searchCount" type="number" min="1" max="100" />
       </label>
 
       <label>
-        Jeda Antar Search Min (ms)
+        Delay Between Searches Min (ms) / Jeda Antar Search Min (ms)
         <input id="betweenMin" type="number" min="1000" max="120000" />
       </label>
 
       <label>
-        Jeda Antar Search Max (ms)
+        Delay Between Searches Max (ms) / Jeda Antar Search Max (ms)
         <input id="betweenMax" type="number" min="1000" max="120000" />
       </label>
 
       <label>
-        Delay Ketik Min per Huruf (ms)
+        Typing Delay Min per Character (ms) / Delay Ketik Min per Huruf (ms)
         <input id="typingMin" type="number" min="20" max="500" />
       </label>
 
       <label>
-        Delay Ketik Max per Huruf (ms)
+        Typing Delay Max per Character (ms) / Delay Ketik Max per Huruf (ms)
         <input id="typingMax" type="number" min="20" max="500" />
       </label>
 
       <label>
-        Keyword Custom (opsional, 1 baris 1 keyword)
-        <textarea id="customKeywords" rows="4" placeholder="contoh:\nberita sepak bola\nharga emas hari ini"></textarea>
+        Custom Keywords (optional, one keyword per line) / Keyword Custom (opsional, 1 baris 1 keyword)
+        <textarea id="customKeywords" rows="4" placeholder="example / contoh:\nfootball news\nberita sepak bola"></textarea>
       </label>
 
       <div class="actions">
@@ -47,7 +47,7 @@
         <button id="stopBtn" class="danger">Stop</button>
       </div>
 
-      <div id="status" class="status">Status: idle</div>
+      <div id="status" class="status">Status: idle / diam</div>
     </main>
 
     <script src="popup.js"></script>

@@ -78,7 +78,7 @@ function scheduleAutosave() {
   }
 
   autosaveTimer = setTimeout(async () => {
-    await persistSettings("Setingan tersimpan otomatis.");
+    await persistSettings("Settings auto-saved. (Setelan tersimpan otomatis.)");
   }, 450);
 }
 
@@ -91,7 +91,7 @@ async function persistSettings(message) {
 }
 
 async function onSave() {
-  await persistSettings("Setingan berhasil disimpan.");
+  await persistSettings("Settings saved successfully. (Setelan berhasil disimpan.)");
 }
 
 async function onStart() {
@@ -104,13 +104,13 @@ async function onStart() {
     return;
   }
 
-  setStatus("Auto-search dimulai.");
+  setStatus("Auto-search started. (Auto-search dimulai.)");
   await refreshStatus();
 }
 
 async function onStop() {
   await chrome.runtime.sendMessage({ type: "stop" });
-  setStatus("Permintaan stop terkirim.");
+  setStatus("Stop request sent. (Permintaan stop terkirim.)");
   await refreshStatus();
 }
 
@@ -119,7 +119,7 @@ async function refreshStatus() {
   const status = response?.status;
 
   if (!response?.ok || !status) {
-    setStatus("Tidak bisa membaca status.");
+    setStatus("Unable to read status. (Tidak bisa membaca status.)");
     return;
   }
 
@@ -137,11 +137,11 @@ async function refreshStatus() {
   }
 
   if (status.progress > 0 && status.progress === status.total) {
-    setStatus(`Selesai: ${status.progress} pencarian.`);
+    setStatus(`Completed: ${status.progress} searches. (Selesai: ${status.progress} pencarian.)`);
     return;
   }
 
-  setStatus("Status: idle");
+  setStatus("Status: idle / diam");
 }
 
 function setStatus(text) {

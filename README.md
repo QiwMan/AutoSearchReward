@@ -4,6 +4,12 @@ AutoSearchReward is a lightweight browser extension for Microsoft Edge/Chromium 
 
 This project is useful for testing search automation flows and learning how a Manifest V3 extension coordinates popup UI, background service worker, and content scripts.
 
+## Preview
+
+![AutoSearchReward Extension Preview](image.gif)
+
+Preview image is optimized as GIF for lightweight repository display.
+
 ## Features
 
 - Configurable number of searches per run
